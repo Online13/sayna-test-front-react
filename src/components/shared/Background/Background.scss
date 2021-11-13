@@ -1,6 +1,12 @@
 .background {
   position: absolute;
   z-index: 19;
+  display: none;
+
+  
+  @media only screen and (min-width: 1056px) {
+    display: block;
+  }
 }
 
 .bg-content {

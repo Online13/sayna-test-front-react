@@ -17,11 +17,21 @@
   .insurance-content {
     width: max-content;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     row-gap: 44px;
     column-gap: 44px;
     margin: auto;
+
+    @media only screen and (min-width: 840px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width: 1056px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 
 }
