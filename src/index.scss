@@ -1,0 +1,12 @@
+@import "./assets/styles/font.scss";
+
+:root {
+  --background: white;
+  --text: black;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: CircularStd;
+}
