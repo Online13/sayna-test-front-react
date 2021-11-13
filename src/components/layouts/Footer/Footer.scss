@@ -1,0 +1,33 @@
+.footer {
+  background-color: #F0F2F6;
+  padding: 32px;
+  padding-top: 5vh;
+
+  line-height: 28px;
+
+  h3 {
+    color: #051033;
+  }
+
+  .follow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-grid {
+    justify-content: center;
+    h3 + * {
+      color: #828798;
+      font-size: 1rem;
+    }
+  }
+
+  & > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BBBFC9;
+    padding-top: 5vh;
+    font-size: 0.9rem;
+  }
+}
