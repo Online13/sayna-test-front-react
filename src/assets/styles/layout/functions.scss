@@ -1,0 +1,5 @@
+$base-font-size: 16px !default;
+
+@function mediaQuery($bp) {
+	@return "only screen and ( min-width: #{$bp} )";
+}

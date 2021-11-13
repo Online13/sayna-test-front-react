@@ -1,0 +1,15 @@
+
+@mixin flex_system($prefix) {
+	.col-#{$prefix}, .col-#{$prefix}-1 {
+		flex: 1 0 0%;
+	}
+
+	@for $i from 2 through 12 {
+		$size: ($i * 8.333334%);
+		.col-#{$prefix}-#{$i} {
+			flex: 0 0 $size;
+			max-width: $size;
+		}
+	}
+}
+

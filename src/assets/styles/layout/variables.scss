@@ -1,0 +1,11 @@
+@use "sass:map";
+@import "./functions.scss";
+
+$breakpoint: ( sm: 576px, md: 730px, lg: 1050px, xl: 1200px );
+$responsive: ();
+
+// to generate responsive variable
+@each $prefix, $bp in $breakpoint {
+	$new: ( $prefix: mediaQuery($bp) );
+	$responsive: map.merge($responsive, $new);
+}

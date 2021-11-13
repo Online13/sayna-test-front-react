@@ -3,7 +3,7 @@ import "./Main.scss";
 function Main() {
   return (
     <main className="main">
-      Hello World in Dev.
+      <p className="m-2">Hello world</p>
     </main>
   );
 }

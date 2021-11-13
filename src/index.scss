@@ -1,12 +1,21 @@
+// define font of the site
 @import "./assets/styles/font.scss";
+// we can change margin from className
+@import "./assets/styles/spaces.scss";
+// now we can use grid system like in bootstrap
+@import "./assets/styles/layout/styles.scss";
 
 :root {
   --background: white;
   --text: black;
 }
 
-body {
+html, body {
   width: 100%;
   margin: 0;
   font-family: CircularStd;
+  font-size: 16px;
+  
+  background-color: var(--background);
+  color: var(--text);
 }

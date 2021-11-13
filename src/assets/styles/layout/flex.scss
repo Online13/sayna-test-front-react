@@ -1,0 +1,24 @@
+@import "./mixins.scss";
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+
+	.col, .col-1 {
+		flex: 1 0 0%;
+	}
+
+	@for $i from 2 through 12 {
+		$size: ($i * 8.333334%);
+		.col-#{$i} {
+			flex: 0 0 $size;
+			max-width: $size;
+		}
+	}
+
+	@each $prefix, $rule in $responsive {
+		@media #{$rule} {
+			@include flex_system($prefix);
+		}
+	}
+}
