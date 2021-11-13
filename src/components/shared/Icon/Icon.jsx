@@ -1,8 +1,10 @@
-function Icon({ logo, size, type }) {
+import "./Icon.scss";
+
+function Icon({ width, height, src, alt,  backgroundColor }) {
   return (
-    <svg width={size} height={size} >
-      <use href={`${logo}#${type}`} />
-    </svg>
+    <div className="icon" style={{ width, height, backgroundColor }}>
+      <img src={src} alt={alt} />
+    </div>
   );
 }
 

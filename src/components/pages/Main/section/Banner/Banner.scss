@@ -1,0 +1,52 @@
+.bg-banner {
+  position: absolute;
+  top: -45%;
+  left: 37.94vw;
+  width: 73vw;
+  height: 73vw;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8.6vw;
+  position: relative;
+
+  h1 {
+    padding-bottom: 28px;
+  }
+
+  & > .content {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .greeting {
+    text-transform: uppercase;
+    color: #A1A1A1;
+    font-size: 20px;
+    font-weight: 500;
+    word-spacing: 2px;
+  }
+
+  .sub-section .content {
+    padding: 52px 32px;
+    text-align: center;
+  }
+
+  .banner-sub-section {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+}

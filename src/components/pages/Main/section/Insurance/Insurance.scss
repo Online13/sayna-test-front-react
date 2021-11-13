@@ -1,0 +1,27 @@
+
+
+.insurance {
+
+  background-color: #F0F2F6;
+  padding-bottom: 7vh;
+
+  .insurance-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7vh 0;
+  }
+
+  .insurance-content {
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 44px;
+    column-gap: 44px;
+    margin: auto;
+  }
+
+}

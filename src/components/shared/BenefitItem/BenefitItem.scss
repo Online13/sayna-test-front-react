@@ -1,0 +1,42 @@
+$size: 80px;
+
+.benefit-item {
+  width: 100%;
+  height: $size;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 52px 0;
+  padding-left: 22px;
+
+  .benefit-logo {
+    width: $size;
+    height: $size;
+    flex-shrink: 0;
+  }
+
+  .benefit-content {
+    padding-left: 22px;
+    width: 100%;
+    height: $size;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    strong {
+      text-transform: uppercase;
+      padding-bottom: 12px;
+      color: #444F62;
+    }
+    p {
+      max-width: 80%;
+      color: #9397a6;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 3px silver;
+  }
+}

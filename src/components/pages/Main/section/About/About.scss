@@ -1,0 +1,40 @@
+.bg-about {
+  left: 0;
+  bottom: 0;
+  width: 61vw;
+  transform: rotateY(180deg);
+}
+
+.about {
+  height: 100vh;
+  padding-left: 8.6vw;
+
+  .about-content {
+    width: 50%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 8.6vw;
+    padding-top: 5vh;
+  }
+  h3 {
+    max-width: 80%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2e81ff;
+  }
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .part-1 {
+    p {
+      max-width: 80%;
+      color: #9397a6;
+      line-height: 32px;
+      padding-bottom: 32px;
+    }
+  }
+  .list {
+    max-width: 80%;
+  }
+}

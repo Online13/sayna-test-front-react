@@ -1,0 +1,17 @@
+.background {
+  position: absolute;
+  z-index: 19;
+}
+
+.bg-content {
+  position: relative;
+  width: 100%;
+}
+
+.back + .bg-content {
+  z-index: 20;
+}
+
+.front + .bg-content {
+  z-index: 18;
+}

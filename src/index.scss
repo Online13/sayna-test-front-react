@@ -10,8 +10,16 @@
   --text: black;
 }
 
+* { box-sizing: border-box; }
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
 html, body {
   width: 100%;
+  overflow-x: hidden;
   margin: 0;
   font-family: CircularStd;
   font-size: 16px;
@@ -27,4 +35,22 @@ html, body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1:not(.logo) {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+
+  &.title {
+    padding: 22px 0;
+  }
+}
+
+p.description {
+  font-size: 1.2rem;
+  color: #979ba5;
 }
