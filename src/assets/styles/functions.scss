@@ -1,3 +1,5 @@
+$base-font-size: 16px !default;
+
 @function strip-unit($expr) {
 	@if type-of($expr) == 'number' and not unitless($expr) {
 		@return $expr / ($expr * 0 + 1);

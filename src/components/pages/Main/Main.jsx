@@ -1,9 +1,10 @@
+import Header from "../../layouts/Header/Header";
 import "./Main.scss";
 
 function Main() {
   return (
     <main className="main">
-      <p className="m-2">Hello world</p>
+      <Header />
     </main>
   );
 }

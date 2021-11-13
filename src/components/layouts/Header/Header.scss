@@ -1,0 +1,29 @@
+@import "./../../../assets/styles/functions.scss";
+
+.header {
+  width: 100%;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  padding-left: 8.6vw;
+  border: 2px solid #F6F6F6;
+
+  .header-content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  h1 { margin: 0; }
+
+  .logo {
+    color: #FF586B;
+    padding-right: rem(25px);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text);
+    padding-right: rem(25px);
+  }
+
+}
