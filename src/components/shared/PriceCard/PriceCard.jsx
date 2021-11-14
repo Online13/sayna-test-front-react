@@ -1,10 +1,27 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
+import observe from "../../../assets/scripts/observe";
 import { star } from "../../../services/Url";
 import Button from "../Button/Button";
 import Check from "../Check/Check";
 import "./PriceCard.scss";
 
 function PriceCard({ active=false, type, price, options }) {
+
+  const card = useRef();
+
+  useEffect(() => {
+    observe({
+      target: card.current,
+      threshold: 0.5,
+      callback: e => {
+        if (e.intersectionRatio > 0.5) {
+          card.current.classList.add(`appear`);
+        } else {
+          card.current.classList.remove(`appear`);
+        }
+      }
+    });
+  },[]);
 
   const theme = useMemo(() => {
     switch (type) {
@@ -46,7 +63,7 @@ function PriceCard({ active=false, type, price, options }) {
   },[type, theme]);
 
   return (
-    <div className={`price-card ${active ? "active" : ""}`}>
+    <div ref={card} className={`price-card ${active ? "active" : ""}`}>
       <div className="type" style={{ color: theme }}>
         {type}
       </div>

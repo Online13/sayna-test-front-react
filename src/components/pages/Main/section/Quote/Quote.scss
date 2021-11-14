@@ -24,6 +24,14 @@
     .blockquote {
       max-width: 75%;
       font-size: 1rem;
+      transform: translateX(-100px);
+      opacity: 0;
+      transition: transform .4s, opacity .3s;
+
+      &.appear {
+        opacity: 1;
+        transform: translateX(0);
+      }
 
       @media only screen and (min-width: 1056px) {
         font-size: 2rem;

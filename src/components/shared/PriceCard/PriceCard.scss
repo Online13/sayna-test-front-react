@@ -5,6 +5,14 @@
   background-color: #fff;
   margin: 12px 4px;
   padding-bottom: 32px;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform .9s, opacity .8s;
+
+  &.appear {
+    transform: scale(1);
+    opacity: 1; 
+  }
 
   @media only screen and (min-width: 1056px) {
     margin: 0 4px;
