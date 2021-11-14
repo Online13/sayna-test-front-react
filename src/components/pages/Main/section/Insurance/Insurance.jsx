@@ -61,12 +61,13 @@ function Insurance() {
         </p>
       </div>
       <div className="insurance-content">
-        {insuranceType.map(insurance => {
+        {insuranceType.map((insurance, id) => {
           return <SquareCard
             src={insurance.icon}
             alt={insurance.alt}
             title={insurance.title}
             bg={insurance.bg}
+            key={`insurance-${id}`}
             content="Insurance can have various effects on society through the way that it changes who bears the cost of losses and damage."
           />
         })}

@@ -1,5 +1,5 @@
 .claims {
-
+  padding-bottom: 32px;
   padding-top: 32px;
 
   .claims-title {
@@ -9,5 +9,34 @@
     align-items: center;
     flex-direction: column;
     padding: 32px 0;
+  }
+
+  .claims-content {
+    width: max-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 44px;
+    column-gap: 44px;
+    margin: auto;
+
+    @media only screen and (min-width: 1056px) {
+      grid-template-columns: repeat(3, 1fr 1px);
+      grid-template-rows: repeat(1, 1fr);
+    }
+  }
+
+  .liaison {
+    position: relative;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    @media only screen and (min-width: 1056px) {
+      display: flex;
+    }
   }
 }

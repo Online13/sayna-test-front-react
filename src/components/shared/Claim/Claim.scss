@@ -1,0 +1,32 @@
+.claim {
+  width: 300px;
+  height: 300px; 
+  text-align: center; 
+
+  .number {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    margin: auto;
+  }
+
+  .claim-content {
+
+    width: 97%;
+    margin: auto;
+
+    .title {
+      padding: 22px 12px;
+      font-size: 1.3rem;
+    }
+
+    .description {
+      line-height: 22px;
+      font-size: 1rem;
+    }
+  }
+}

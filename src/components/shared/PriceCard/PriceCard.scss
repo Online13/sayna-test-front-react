@@ -1,0 +1,72 @@
+.price-card {
+  width: 360px;
+  height: max-content;
+  box-shadow: 0 0 18px rgba(192, 192, 192, 0.397);
+  background-color: #fff;
+  margin: 12px 4px;
+  padding-bottom: 32px;
+
+  @media only screen and (min-width: 1056px) {
+    margin: 0 4px;
+  }
+
+  &.active {
+
+    @media only screen and (min-width: 1056px) {
+      transform: scale(1.05);
+      position: relative;
+      bottom: 22px;        
+    }
+  }
+
+  .type {
+    text-align: center;
+    padding: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 7px;
+  }
+
+  .price-bulle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+
+    .bulle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.2rem;
+      position: relative;
+      font-weight: bold;
+
+      &::before {
+        content: '$';
+        font-size: 1rem;
+        position: relative;
+        bottom: 10px;
+        padding-right: 2px;
+        color: inherit;
+      }
+    }
+  }
+
+  .plan {
+    width: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+  }
+}

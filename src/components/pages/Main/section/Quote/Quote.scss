@@ -1,0 +1,54 @@
+.quote {
+  width: 100%;
+  height: 100vh;
+
+  .c {
+    width: 75%;
+    padding-bottom: 22px;
+  }
+
+  .quote-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    .blockquote {
+      max-width: 75%;
+      font-size: 2rem;
+    }
+  }
+
+  .authors {
+    width: 75%;
+
+    .name {
+      display: block;
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: #5799FF;
+      padding-top: 22px;
+    }
+
+    .status {
+      display: block;
+      color: #A6A9B6;
+      padding-top: 6px;
+    }
+  }
+}
+
+.bg-witness {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+}
+
+.bg-author {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+}
+

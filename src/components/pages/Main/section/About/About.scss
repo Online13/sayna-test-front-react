@@ -6,18 +6,32 @@
 }
 
 .about {
-  height: 100vh;
-  padding-left: 8.6vw;
+  min-height: 100vh;
+
+  .part-1 {
+    padding: 0 8vw;
+
+    @media only screen and (min-width: 1056px) {
+      padding: 0;
+    }
+  }
+
+  @media only screen and (min-width: 1056px) {
+    padding-left: 8.6vw;
+    padding-right: 0;
+  }
 
   .about-content {
     width: 100%;
     margin: 0;
     padding-top: 5vh;
+    margin-bottom: 80px;
 
     @media only screen and (min-width: 1056px) {
       width: 50%;
       margin-left: auto;
       margin-right: 8.6vw;
+      margin-bottom: 0;
     }
   }
   h3 {
@@ -45,6 +59,11 @@
     }
   }
   .list {
-    max-width: 80%;
+    width: 100%;
+    padding: 0 12px;
+    @media only screen and (min-width: 1056px) {
+      max-width: 80%;
+      padding: 0;
+    }
   }
 }
