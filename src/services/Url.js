@@ -36,6 +36,6 @@ export const arrow = "https://firebasestorage.googleapis.com/v0/b/sayna-test-fro
 
 export const check = "https://firebasestorage.googleapis.com/v0/b/sayna-test-front.appspot.com/o/tick.png?alt=media&token=2a6cbeb3-26ed-4f24-acb6-28e2fa84e998";
 
-export const check2 = "https://firebasestorage.googleapis.com/v0/b/sayna-test-front.appspot.com/o/check-svgrepo-com.svg?alt=media&token=048aa70d-7f68-4cc3-9e18-d69724301222";
+export const check2 = "https://firebasestorage.googleapis.com/v0/b/sayna-test-front.appspot.com/o/check-mark-svgrepo-com.svg?alt=media&token=d82bb36d-1717-4baa-8e74-b9f1bc5357eb";
 
-
+export const star = "https://firebasestorage.googleapis.com/v0/b/sayna-test-front.appspot.com/o/star-svgrepo-com(1).svg?alt=media&token=26618411-bfe8-4593-852b-51de84994cd6";

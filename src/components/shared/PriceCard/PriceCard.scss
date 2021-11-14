@@ -12,11 +12,43 @@
 
   &.active {
 
+    position: relative;
+
     @media only screen and (min-width: 1056px) {
       transform: scale(1.05);
       position: relative;
       bottom: 22px;        
     }
+
+    .save {
+      width: max-content;
+      background-color: #FFF4B4;
+      color: #E6C775;
+      padding: 4px;
+      font-weight: bold;
+      margin: auto;
+      position: relative;
+      bottom: 12px;
+    }
+
+    .star {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background-color: #FDEEBE;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+    
+      img {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
   }
 
   .type {

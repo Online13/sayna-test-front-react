@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { star } from "../../../services/Url";
 import Button from "../Button/Button";
 import Check from "../Check/Check";
 import "./PriceCard.scss";
@@ -49,6 +50,12 @@ function PriceCard({ active=false, type, price, options }) {
       <div className="type" style={{ color: theme }}>
         {type}
       </div>
+      {active && <div className="save">
+        <span>SAVE 20%</span>  
+      </div>}
+      {active && <div className="star">
+        <img src={star} alt="star yellow" />
+      </div>}
       <div className="price-bulle">
         <div className="bulle" style={{ backgroundColor: bulle, color }}>
           {price}
