@@ -8,10 +8,10 @@ function Footer() {
         <div className="col-12 col-lg-3">
           <h3>ADDRESS</h3>
           <p>
-            400-401 West Georgia Street <br />
-            Vancouver, BC, Canada, V6B 5A1 <br />
-            +1 (123) 456 7890 <br />
-            sales@insurance.com <br />
+            <span>400-401 West Georgia Street</span>
+            <span>Vancouver, BC, Canada, V6B 5A1</span>
+            <span>+1 (123) 456 7890</span>
+            <span>sales@insurance.com</span>
           </p>
         </div>
         <div className="col-12 col-lg-3">
@@ -26,7 +26,7 @@ function Footer() {
         <div className="col-12 col-lg-3">
           <h3>ABOUT US</h3>
           <p>
-          Compellingly myocardinate market-driven infrastructures before team driven manufactured products. Monotonectally exploit tactical markets vis-a-vis excellent deliverables.
+            Compellingly myocardinate market-driven infrastructures before team driven manufactured products. Monotonectally exploit tactical markets vis-a-vis excellent deliverables.
           </p>
         </div>
       </div>

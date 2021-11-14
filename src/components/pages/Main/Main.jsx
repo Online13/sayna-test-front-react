@@ -11,6 +11,7 @@ import Quote from "./section/Quote/Quote";
 
 import proposal1 from "./../../../assets/images/shield-yellow.svg";
 import Pricing from "./section/Pricing/Pricing";
+import Question from "./section/Question/Question";
 
 function Main() {
   return (
@@ -32,6 +33,7 @@ function Main() {
           />
         </Section>
         <Section><Pricing /></Section>
+        <Section><Question /></Section>
       </div>
       <Footer />
     </main>

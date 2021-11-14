@@ -55,9 +55,11 @@ function PriceCard({ active=false, type, price, options }) {
         </div>
       </div>
       <div className="plan">
-        {options.map((option, id) => <div>
-          <Check key={`option-${id}-${type}`} descri={option} />
-        </div>)}
+        {options.map((option, id) => {
+          return (<div key={`option-${id}-${type}`}>
+            <Check descri={option} />
+          </div>);
+        })}
       </div>
       <div className="action">
         <Button background={theme} color="white">

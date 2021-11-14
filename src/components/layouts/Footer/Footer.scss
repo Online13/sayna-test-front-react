@@ -7,6 +7,9 @@
 
   h3 {
     color: #051033;
+    @media only screen and (min-width: 1056px) {
+      padding-bottom: 12px;
+    }
   }
 
   .follow {
@@ -16,10 +19,26 @@
 
   .footer-grid {
     justify-content: center;
+
+    & > * {
+      @media only screen and (max-width: 1056px) {
+        padding: 12px 0;
+      }
+    }
+
     h3 + * {
       color: #828798;
       font-size: 1rem;
     }
+  }
+
+  span {
+    display: block;
+    padding: 5px 0;
+  }
+
+  a {
+    padding: 6px 0;
   }
 
   & > p {
