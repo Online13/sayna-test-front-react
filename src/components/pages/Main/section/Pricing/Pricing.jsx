@@ -1,7 +1,7 @@
 import Background from "../../../../shared/Background/Background";
 import "./Pricing.scss";
-import bgPricing from "./../../../../../assets/images/Composed-layer-3.png";
 import PriceCard from "../../../../shared/PriceCard/PriceCard";
+import { bgPricing } from "../../../../../services/Url";
 
 function Pricing() {
   return (

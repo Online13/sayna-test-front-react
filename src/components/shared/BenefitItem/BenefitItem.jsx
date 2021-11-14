@@ -1,5 +1,5 @@
+import { check } from "../../../services/Url";
 import "./BenefitItem.scss";
-import check from "./../../../assets/images/tick.png";
 
 function BenefitItem({ describe, alt, title }) {
   return (

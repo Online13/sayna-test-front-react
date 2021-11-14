@@ -1,7 +1,7 @@
 import Background from "../../../../shared/Background/Background";
 import "./About.scss";
-import about from "./../../../../../assets/images/health-family-illustration.svg";
 import BenefitItem from "../../../../shared/BenefitItem/BenefitItem";
+import { about } from "../../../../../services/Url";
 
 function About() {
   return (
@@ -17,20 +17,14 @@ function About() {
           </div>
           <div className="list part-2">
             <BenefitItem
-              src=""
-              alt="alt"
               title="Comprehensive Insurance"
               describe="Dynamically repurpose e-business users rather than granular products."
             />
             <BenefitItem
-              src=""
-              alt="alt"
               title="Support is just a call away"
               describe="Rapidiously customize value-added platforms compliant action items."
             />
             <BenefitItem
-              src=""
-              alt="alt"
               title="Say goodbye to paperwork."
               describe="Globally deliver economically sound communities relationships."
             />

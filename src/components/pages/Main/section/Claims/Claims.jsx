@@ -1,8 +1,7 @@
 import { useMemo } from "react";
+import { im1, im2 } from "../../../../../services/Url";
 import Claim from "../../../../shared/Claim/Claim";
 import "./Claims.scss";
-import im1 from "./../../../../../assets/images/after-blue.png";
-import im2 from "./../../../../../assets/images/after-pink.png";
 
 function Claims() {
 

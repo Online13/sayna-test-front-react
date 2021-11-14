@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { arrow } from "../../../services/Url";
 import "./AccordionItem.scss";
-import arrow from "./../../../assets/images/up-arrow-svgrepo-com.svg";
 
 function AccordionItem({ id, current, updateCurrent, pclose = true, title, children }) {
 

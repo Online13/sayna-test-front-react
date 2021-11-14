@@ -1,8 +1,8 @@
 import "./Banner.scss";
 import SubSection from "./../../../../layouts/SubSection/SubSection";
 import Button from "./../../../../shared/Button/Button";
-import banner from "./../../../../../assets/images/banner-illustration.svg";
 import Background from "../../../../shared/Background/Background";
+import { banner } from "../../../../../services/Url";
 
 function Banner() {
   return (

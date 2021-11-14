@@ -1,12 +1,10 @@
+import { bg3, quote, someone } from "../../../../../services/Url";
 import Background from "../../../../shared/Background/Background";
 import "./Quote.scss";
-import bg from "./../../../../../assets/images/bg-image3.png";
-import someone from "./../../../../../assets/images/testi-img.png";
-import quote from "./../../../../../assets/images/quote.png";
 
 function Quote() {
   return (
-    <Background src={bg} top={false} alt="background for this witness" className="bg-witness" >
+    <Background src={bg3} top={false} alt="background for this witness" className="bg-witness" >
       <Background src={someone} top={false} alt="someone" className="bg-author">
         <div className="quote">
           <div className="quote-content">

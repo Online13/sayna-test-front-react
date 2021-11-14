@@ -1,10 +1,9 @@
 import "./Question.scss";
-import Proposal from "../../../../shared/Proposal/Proposal";
-import proposal2 from "./../../../../../assets/images/shield-1.png";
-import Background from "../../../../shared/Background/Background";
-import bg from "./../../../../../assets/images/family-illustration.svg";
 import Accordion from "../../../../shared/Accordion/Accordion";
 import { useMemo } from "react";
+import { bg, proposal2 } from "../../../../../services/Url";
+import Proposal from "../../../../shared/Proposal/Proposal";
+import Background from "../../../../shared/Background/Background";
 
 function Question() {
 

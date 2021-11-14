@@ -1,12 +1,7 @@
 import SquareCard from "../../../../shared/SquareCard/SquareCard";
 import "./Insurance.scss";
-import homeIcon from "./../../../../../assets/images/home-insurance.svg";
-import carIcon from "./../../../../../assets/images/car-insurance.svg";
-import lifeIcon from "./../../../../../assets/images/life-insurance.svg";
-import businessIcon from "./../../../../../assets/images/business-insurance.svg";
-import travelIcon from "./../../../../../assets/images/travel-insurance.svg";
-import otherIcon from "./../../../../../assets/images/other-insurance.svg";
 import { useMemo } from "react";
+import { businessIcon, carIcon, homeIcon, lifeIcon, otherIcon, travelIcon } from "../../../../../services/Url";
 
 function Insurance() {
 
@@ -48,7 +43,6 @@ function Insurance() {
         bg: "#D3D3FF",
         alt: ""
       },
-
     ]
   }, []);
 

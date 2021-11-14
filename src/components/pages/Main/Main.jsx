@@ -9,9 +9,9 @@ import Claims from "./section/Claims/Claims";
 import Insurance from "./section/Insurance/Insurance";
 import Quote from "./section/Quote/Quote";
 
-import proposal1 from "./../../../assets/images/shield-yellow.svg";
 import Pricing from "./section/Pricing/Pricing";
 import Question from "./section/Question/Question";
+import { proposal1 } from "../../../services/Url";
 
 function Main() {
   return (
