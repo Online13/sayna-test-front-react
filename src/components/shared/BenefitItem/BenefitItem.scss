@@ -10,6 +10,20 @@ $size: 80px;
   padding: 52px 0;
   padding-left: 22px;
 
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.3s;
+  // transition-delay: 0.8s;
+
+  @for $i from 0 through 3 {
+    &.appear-#{$i} {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: $i * 0.3s;
+    }
+  }
+
+
   .benefit-logo {
     width: $size;
     height: $size;

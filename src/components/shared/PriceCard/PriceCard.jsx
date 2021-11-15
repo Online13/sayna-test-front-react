@@ -12,7 +12,7 @@ function PriceCard({ active=false, type, price, options }) {
   useEffect(() => {
     observe({
       target: card.current,
-      threshold: 0.5,
+      threshold: [0, 1],
       callback: e => {
         if (e.intersectionRatio > 0.5) {
           card.current.classList.add(`appear`);

@@ -17,14 +17,17 @@ function About() {
           </div>
           <div className="list part-2">
             <BenefitItem
+              id={0}
               title="Comprehensive Insurance"
               describe="Dynamically repurpose e-business users rather than granular products."
             />
             <BenefitItem
+              id={1}
               title="Support is just a call away"
               describe="Rapidiously customize value-added platforms compliant action items."
             />
             <BenefitItem
+              id={2}
               title="Say goodbye to paperwork."
               describe="Globally deliver economically sound communities relationships."
             />
